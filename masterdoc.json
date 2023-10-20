@@ -1,0 +1,14 @@
+[{
+  "Name": "Microsoft Fabric with Azure Databricks",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/main/Instructions/Labs/Getting-Started.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/Zubair8899/ignitepersonal/main/Readme-Shell.md",
+      "Order": 2
+    }
+  ]
+}]
