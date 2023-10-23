@@ -93,7 +93,7 @@ The demo illustrates how the Contoso team leveraged Microsoft Fabric with Azure 
 
 ### Task 1.1: Create a Microsoft Fabric enabled workspace
 
-1. **Open** Power BI in a new tab by clicking [HERE](https://app.powerbi.com/).
+1. **Open** the new tab in the browser and Copy the link https://app.powerbi.com/ and paste it to open the Power BI sign in page.
 
 2. **Sign into** the Power BI.
 
@@ -393,7 +393,7 @@ The demo illustrates how the Contoso team leveraged Microsoft Fabric with Azure 
 
 	![Datawarehouse.](media/task-1.3-notebook-7.png)
 	
-4. **Browse** to the notebooks from your local system through the path "C:\FabricLab\artifacts\fabricnotebooks", **select** all the notebooks and **click** the 'Open' button.
+4. **Browse** to the notebooks from your local system through the path "C:\LabFiles\IgniteDreamLab2023\artifacts\fabricnotebooks", **select** all the notebooks and **click** the 'Open' button.
 
 	![Datawarehouse.](media/task-1.3-notebook-8.png)
 
@@ -1075,7 +1075,7 @@ A sudden rise or drop in temperature triggers an alert for the Contoso staff to 
 
 	![Task 6](media/task-6.1.10.png)
 
-7. **Browse** to the reports from your local system through the path "C:\FabricLab\artifacts\reports", **select** 'Real-Time and Historical in-store analytics with KQLDB.pbix' report and **click** on the 'Open' button.
+7. **Browse** to the reports from your local system through the path "C:\LabFiles\IgniteDreamLab2023\artifacts\reports", **select** 'Real-Time and Historical in-store analytics with KQLDB.pbix' report and **click** on the 'Open' button.
 
 	![Task 6](media/task-5.4.7.png)
 
@@ -1113,7 +1113,7 @@ In this task, you will work with Power BI to reveal some valuable insights.
 
 	![Task 6](media/task-6.1.10.png)
 
-4. **Browse** to the reports from your local system through the path "C:\FabricLab\artifacts\reports", **select** 'Campaign Analytics Report with Lakehouse.pbix' report and **click** on the 'Open' button.
+4. **Browse** to the reports from your local system through the path "C:\LabFiles\IgniteDreamLab2023\artifacts\reports", **select** 'Campaign Analytics Report with Lakehouse.pbix' report and **click** on the 'Open' button.
 
 	![Task 6](media/task-6.1.11.png)
 
