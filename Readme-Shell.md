@@ -91,9 +91,20 @@ The demo illustrates how the Contoso team leveraged Microsoft Fabric with Azure 
 
 ## Exercise 1: Data Engineering experience, Data ingestion from a spectrum of analytical data sources into OneLake
 
+*Before we start executing the steps, we will trigger the simulator app to start streaming data to eventhub.*
+
+ **Open** the new tab in the browser and copy paste the below URL to verify app service streaming data.
+
+  <inject key= https://app-realtime-kpi-analytics-"DeploymentID".azurewebsites.net enableCopy="true"/>  
+
 ### Task 1.1: Create a Microsoft Fabric enabled workspace
 
-1. **Open** the new tab in the browser and Copy the link https://app.powerbi.com/ and paste it to open the Power BI sign in page.
+1. **Open** the new tab in the browser and Copy the link below and paste it to open the Power BI sign in page.
+
+```BASH
+   https://app.powerbi.com/
+```
+*Note: After you paste the link in the browser, the page will automatically login. If in case follow the steps 1 and 2.*
 
 2. **Sign into** the Power BI.
 
