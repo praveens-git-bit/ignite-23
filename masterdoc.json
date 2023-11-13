@@ -9,27 +9,27 @@
 
     {
       "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Introduction.md",
-      "Order": 2
+      "Order": 1
     },
     
     {
       "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise1.md",
-      "Order": 3
+      "Order": 2
     },
 
      {
       "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise2.md",
-      "Order": 4
+      "Order": 3
     },
 
     {
       "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise3&4.md",
-      "Order": 5
+      "Order": 4
     },
 
     {
       "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise5&6.md",
-      "Order": 6
+      "Order": 5
     },
  
   ]
