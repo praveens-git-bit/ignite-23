@@ -3,12 +3,34 @@
   "Language": "English",
   "Files": [
     {
-      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/main/Instructions/Labs/Getting-Started.md",
-      "Order": 1
+      "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/getStarted.md",
+      "Order": 0
     },
+
     {
-      "RawFilePath": "https://github.com/praveens-git-bit/ignite-23/blob/main/Readme-Shell.md",
+      "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Introduction.md",
       "Order": 2
-    }
+    },
+    
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise1.md",
+      "Order": 3
+    },
+
+     {
+      "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise2.md",
+      "Order": 4
+    },
+
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise3&4.md",
+      "Order": 5
+    },
+
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/praveens-git-bit/ignite-23/main/Exercise5&6.md",
+      "Order": 6
+    },
+ 
   ]
 }]
