@@ -19,8 +19,8 @@ Contoso already had some of their compute workload on **Azure Databricks**. You 
 
 ### Currently there are two ways to authenticate OneLake.
 
-**Credential passthrough**
-**Service Principle approach** (In this lab, you will use Service Principal approach)
+- **Credential passthrough**
+- **Service Principle approach** (In this lab, you will use Service Principal approach)
 
 
 1. Click on the **Setting Icon** above in the right corner of the page.
