@@ -1,6 +1,8 @@
 
 ## Exercise 3: Data Science experience, explore Machine Learning and Business Intelligence scenarios.
 
+So, we saw how Contoso was able to combine their historical gold layer data from ADLS Gen2 with all the data in OneLake via shortcuts. We also saw how all that data could be easily accessed in Azure Databricks (thanks to it being in the standard delta parquet format) and the ability to mount Onelake as an endpoint in Azure Databricks. We saw delta live tables being created for further curation of data in Azure Databricks. Now, we go a step beyond to see the power of ML models in ADB being leveraged on that data so Contoso can gain meaningful insights and see customer churn predictions. As Data Scientist let's see how we can explore the Data Science Experience in Azure Databricks and Microsoft Fabric!
+
 ### Task 3.1: Build ML models, experiments, and Log ML model in the built-in model registry using MLflow and batch scoring.
 
 #### Databricks
@@ -65,68 +67,10 @@ Once we have the predicted data, it is stored back in delta tables in the gold l
 
    ![Close the browser.](media/task-3.1.9.png)	
 
-#### Microsoft Fabric
-
-Microsoft Fabric offers Data Science experiences to empower users to complete end-to-end data science workflows for the purpose of data enrichment and business insights. You can complete a wide range of activities across the entire data science process, all the way from data exploration, preparation and cleansing to experimentation, modeling, model scoring and serving predictive insights to BI reports.
-
-1. Navigate back to the **Power BI workspace**.	
-	
-When building data science workflows, we can leverage data science services alongside Microsoft Fabric to handle different stages of the workflow, such as data ingestion, data processing, model training, and deployment. 
-In this lab we have stored data science models as microservices within Microsoft Fabric, taking advantage of its scalability and reliability features.
-
-   ![Close the browser.](media/task-3.1.11.png)	
-
-2. In Power BI service, click on **Workspaces** and then click on **contosoSales**. 
-
-	![Close the browser.](media/task-3.1.10.png)
-
-3. Click on **Filter** and select **Notebook** then click on the **02 Churn Prediction Using MLFlow From Silver To Gold Layer** notebook.
-
-	![Close the browser.](media/task-3.1.12.png)
-
-4. Wait for few seconds to load the page, In the left pane, click on the **Missing Lakehouse** button and select **Remove all Lakehouses**.  
-
-	![Datawarehouse.](media/task-1.3-notebook-11.png)
-
-`Note:` If you do not see Missing lakehouse, you'll see **lakehouse{Name}**, click on that name to get the **Remove all Lakehouses** option.
-
-5. Click on **Continue** in the pop-up window.
-
-	![Datawarehouse.](media/task-1.3-notebook-12.png)
-
-6. In the left pane, click on the **Add** button.
-
-	![Datawarehouse.](media/task-1.3-notebook-13.png)
-
-7. In the pop-up, select the **Existing Lakehouse** radio button and then click on the **Add** button.
-
-	![Datawarehouse.](media/task-1.3-notebook-14.png)
-
-8. Click on the **lakehouseSilver** checkbox and then click on **Add**.
-
-	![Datawarehouse.](media/task-3.1.13.png)
-
-This notebook describes steps and scripts/code to create, evaluate and deploy a customer churn prediction model.
-
-`Note: Due to time constraints, we will not run this notebook.`
-
-*Load Data using Drag & Drop.*
-
-Microsoft Fabric allows an easy drag and drop feature to load the data from the delta tables.
-We can simply drag the tables from lakehouseSilver and drop it to the notebook cell.
-
-*Chart view to explore data.*
-
-Microsoft Fabric provides an interactive visualization interface for exploring and analyzing data. 
-
-It offers a variety of chart types and customization options to create insightful visualizations that help with understanding patterns, trends, and relationships within the data.
-
-*Data Wrangler to preprocess data in lakehouses.*
-
-Data Wrangler is a code tool that prepares data and generates Python code. This experience makes it easy to accelerate data cleansing and build repeatability and automation through generated code.
-
 
 ## Exercise 4: Data Warehouse experience, explore SQL Analytics with Data Warehouse.
+
+Now let's see how Contoso was able to easily create Data Warehouses for its various departments. We'll start with the illustration of the Sales department. A Data Anlayst can easily create virtual warehouses and run cross database queries.How cool is that?!
 
 ### Task 4.1: Create a Data Warehouse
 
@@ -231,6 +175,8 @@ salesDW
 
 	![Datawarehouse.](media/task-4.1.warehouse-19.png)
 
+
+**OPTIONAL TASK 4.3**
 
 ### Task 4.3: Create virtual Data Warehouses
 
