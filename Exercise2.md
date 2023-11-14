@@ -17,7 +17,7 @@
 
 Contoso already had some of their compute workload on **Azure Databricks**. You don’t need to migrate any of that workload to work with Fabric. You can simply use the OneLake endpoint to mount the storage and work with the same data directly from the Lakehouse for their analytical and ML operations.
 
-#Currently there are two ways to authenticate OneLake.
+# Currently there are two ways to authenticate OneLake.
 
 1. Click on the **Setting Icon** above in the right corner of the page.
 
