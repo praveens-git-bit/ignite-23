@@ -28,13 +28,13 @@
 
    ![Create Power BI Workspace.](media/task-1.1-new1.png)
 
-1. In Power BI service, click on **Workspaces**.
+2. In Power BI service, click on **Workspaces**.
 
-2. Click the **+ New workspace** button.
+3. Click the **+ New workspace** button.
 
 	![Create Power BI Workspace.](media/task-1.1.2.png)
 
-3. Copy the below name and paste it in the **Name** field of workspace and if the **contosoSales** workspace is not availabe please add any *suffix*.
+4. Copy the below name and paste it in the **Name** field of workspace and if the **contosoSales** workspace is not availabe please add any *suffix*.
 
   ```BASH
   contosoSales
@@ -43,26 +43,9 @@
    ![Create Power BI Workspace.](media/task-1.1.3.png)
 
 
-`Note: If you are getting any popups follow up the below steps or else jump to Task 1.2`
-
-*Click on the **Try free** button.*
-
-   ![Create Power BI Workspace.](media/task-1.1-new2.png)
-
-*Click on the **Got it** button to continue.*
-
-   ![Create Power BI Workspace.](media/task-1.1-new3.png)
-
-5. Click on **Workspaces** to verify if the workspace with the given name got created, if not **perform** the above steps once again.
-
-	![Create Power BI Workspace.](media/task-1.1-new4.png)
-
-  ```BASH
-  contosoSales
-  ```
-
 ### Task 1.2: Create/Build a Lakehouse
 
+Now, let's see how each department in Contoso could easily create a Lakehouse in their workspace without any provisioning needed by simply providing the name, given the proper access rights of course!
 
 1. In Power BI service, click **+ New** and then select **Show all**.
 
@@ -99,13 +82,15 @@ lakehouseBronze
 
 7. Repeat from **steps 1 to 5** to create two more lakehouses with the names **lakehouseSilver** and **lakehouseGold** respectively.
 
+```BASH	
+lakehouseSilver
+```
+
 ```BASH
 lakehouseGold
 ```
 
-```BASH	
-lakehouseSilver
-```
+We are now ready to start data ingestion. As the above names suggest, we will showcase the Medallion architecture. This means we will ingest the raw data in the bronze layer first from disparate sources for Contoso. After that, the data will be curated and enriched to the silver and then gold layers.
 
 ### Task 1.3: Data Ingestion
     
@@ -114,7 +99,6 @@ lakehouseSilver
 1. Go to **contosoSales** workspace, and click on the **+ New** button and select **More options**.
 
 	![Pipeline.](media/task-1.3.1.png)
-
 
 
 `Note: Instead of More options you may see Show all.`
@@ -128,7 +112,7 @@ lakehouseSilver
 	![Pipeline.](media/task-1.3.3.png)
 
 ```BASH
-Sales data from Azure SQL DB - Low Code Experience
+Azure SQL DB Pipeline
 ```
 
 4. Click on **Copy data**.
@@ -181,7 +165,7 @@ Smoothie@2023
 
 `Note: Wait for the connection to be created.`
 
-9. Select the **Existing tables** radio button, click on the **checkbox** for the first table below the Select all option, and then click on the **Next** button.
+9. Select the **Existing tables** radio button, click on the checkbox for the **First Table** below the Select all option, and then click on the **Next** button.
 
 	![Datawarehouse.](media/task-1.3.17.png)
 
@@ -201,7 +185,7 @@ Smoothie@2023
 
 	![Datawarehouse.](media/task-1.3.21.png)
 
-14. Click on the **three dots** at top right of the screen, select **Notifications**.
+14. Click on the **three dots** or **Notification Icon** at top right of the screen, select **Notifications**.
 
 	![Datawarehouse.](media/task-1.3.21.1.png)
 
@@ -218,10 +202,9 @@ Smoothie@2023
 17. Similarly you can get data into the Lakehouses using pipelines from various other sources like Snowflake, Dataverse, etc.
 
 
- *Due to time constraints, we will be moving forward to the next steps.*
-
-
 ### Using the ‘New Shortcut’ option from external data sources
+
+This is something exciting! You will see how easy it is to create shortcuts without actually moving the data. That is the power of OneLake! In this exercise you will easily ingest the curated marketing data as well as product reviews data from ADLS Gen2. Let's see how!
 
 1. In **Power BI**, click **Workspaces** and select the **contosoSales** workspace.
 
@@ -297,7 +280,7 @@ Smoothie@2023
 data
 ```
 
-20. Under **Sub Path**, type **/adlsfabricshortcut**.
+20. Under **Sub Path**, copy past the below path **/adlsfabricshortcut**.
 
 ```BASH
 /adlsfabricshortcut
@@ -307,6 +290,7 @@ data
 
 	![Lakehouse.](media/task-1.3-ext-shortcut10.png)
 
+Litware has curated marketing data and sales data processed by Azure Databricks and stored in the gold layer in ADLS Gen 2. You can easily create a shortcut in Microsoft Fabric without moving this data.
 
 #*We will now create another shortcut for Litware Inc. data.*
 
@@ -354,6 +338,8 @@ sales-transaction-litware
 
 ### Using Spark Notebook ‘Code-first experience’
 
+As Data Engineer,another option for ingesting the data. This time Eva prefers using the code-first experience. Go back to your existing workspace contosoSales.
+
 1. While you are in the **Power BI workspace**, click on **Power BI** in the bottom left corner and select **Data Science**.
 
 	![Datawarehouse.](media/task-1.3-notebook-5.png)
@@ -366,7 +352,7 @@ sales-transaction-litware
 
 	![Datawarehouse.](media/task-1.3-notebook-7.png)
 	
-4. Browse to the notebooks from your JumpVM through the path **C:\LabFiles\IgniteDreamLab2023\artifacts\fabricnotebooks**, select all of the notebooks and click on the **Open** button.
+4. Browse to the notebooks from your JumpVM/Bastion through the path **C:\LabFiles\IgniteDreamLab2023\artifacts\fabricnotebooks**, select all of the notebooks and click on the **Open** button.
 
 	![Datawarehouse.](media/task-1.3-notebook-8.png)
 
