@@ -19,6 +19,10 @@ Contoso already had some of their compute workload on **Azure Databricks**. You 
 
 ### Currently there are two ways to authenticate OneLake.
 
+	- Credential passthrough
+ 	- Service Principle approach (In this lab, you will use Service Principal approach)
+
+
 1. Click on the **Setting Icon** above in the right corner of the page.
 
    `Note: If you are not seeing settings icon, click on the three dots next to Fabric Trail: 59 days left and in the drop down click on Settings Icon.` 
@@ -116,7 +120,7 @@ contosoSales
 
 `Note: Wait for 5 to 6 minutes before moving on to next step to get the successfull execution of notebook`
 
-21. Once the setup notebook runs successfully, mounting to the storage account is complete.
+19. Once the setup notebook runs successfully, mounting to the storage account is complete.
 
 
 ### Task 2.2: Create a Delta Live Table pipeline
@@ -124,6 +128,10 @@ contosoSales
 In this task, you can create a Delta Live Table pipeline.
 
 *Delta Live Tables (DLT) allow you to build and manage reliable data pipelines that deliver high-quality data in Lakehouse. DLT helps data engineering teams simplify ETL development and management with declarative pipeline development, automatic data testing, and deep visibility for monitoring and recovery.*
+
+After mounting the OneLake location, it’s time to convert the raw bronze files into the open standard delta parquet format, supported by OneLake.
+
+This can be done using any Spark compute either in Microsoft Fabric or Azure Databricks. In this lab you will use DLT pipelines to process the raw data from OneLake and store it back in Open Delta tables (Bronze>Silver>Gold Layer).
 
 1. Select the **Workflows** icon in the left navigation pane.
 
@@ -172,7 +180,7 @@ Delta Live Table Pipeline
 
 ### Task 2.3: Explore SQL Analytics with Lakehouse SQL-endpoint
 
-*Every Lakehouse comes with a default SQL endpoint which can be used for querying purposes using SQL syntax.*
+*Microsoft Fabric Lakehouse comes with a default SQL endpoint which can be used for querying purposes using SQL syntax.*
 
 *We can go from Lakehouse to SQL endpoint in the same window by selecting SQL endpoint from the Lakehouse dropdown menu in the top right corner of the window.*
 
@@ -206,14 +214,13 @@ Delta Live Table Pipeline
 
 	![Select Notebook](media/task-2.3-sql4.png)
 
+6. Copy the SQL query.
+
+```BASH
+ Select fc.ProductCategory,Sum(fc.Revenue) Revenue from [lakehouseSilver].[dbo].[dimension_product] dp JOIN [lakehouseSilver].[dbo].[fact_campaigndata] fc on dp.Category=fc.[ProductCategory] Group by fc.ProductCategory having sum(fc.[Revenue])< (Select Top 1 Sum(fc.Revenue) Revenue from [lakehouseSilver].[dbo].[dimension_product] dp JOIN [lakehouseSilver].[dbo].[fact_campaigndata] fc on dp.Category=fc.[ProductCategory] Group by fc.ProductCategory ORDER by Revenue DESC) ORDER by Revenue DESC
+```
 *We can write a query to get the insights from sales data that we ingested using the shortcut names 'sales-transaction-litware'.*
 
-*We can also run queries with complex joins on the same table to get LitWare Inc.’s top 10 bestselling products and see how fast we can get the results. When running the queries, we get the result within seconds, and once it is in cold cache, it will take even less time to get the results. These queries showcase the data engineering experience in Microsoft Fabric.*
+*We can also run queries with complex joins on the same table to get LitWare Inc.’s bestselling productcategory and see how fast we can get the results. When running the queries, we get the result within seconds, and once it is in cold cache, it will take even less time to get the results. These queries showcase the data engineering experience in Microsoft Fabric.*
 
-#### Visual Query
-
-6. Click on **New visual query**.
-
-	![Select Notebook](media/task-2.3-sql5.png)
-
-*We can drag and drop tables from the Lakehouse to the canvas and establish a relationship between them before executing the query.*
+You also have an option to create a visual query.
