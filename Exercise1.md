@@ -400,6 +400,8 @@ As Data Engineer,another option for ingesting the data. This time Eva prefers us
 
 14. Go to the cell with name **Shortcut Folder Path**, replace from Hash to Hash **#WORKSPACE_NAME#** with the Fabric Workspace name you are working on and also verify the lakehouse name which should be the Bronze Lakehouse you created.
 
+`Note: Make sure you delete the "#" too in above step.`
+
 ```BASH
 contosoSales
 ```
