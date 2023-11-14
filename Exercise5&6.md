@@ -1,6 +1,8 @@
 
 ## Exercise 5: Power BI reports with Direct Lake
 
+So, we saw that Contoso was able to have all their organizational data in OneLake in Microsoft Fabric while still continuing to invest in Azure Databricks from their past architecture. You may be asking, what are the benefits? The benefit’s are tremendous! Contoso can leverage the persona-based experiences in Microsoft Fabric for their various personas. They can choose their type of workloads and computes to run on top of this data and they could easily scale to add even more sources of data in the future. On top of that, they could benefit from the governance features of Microsoft Purview and OneSecurity across their entire data estate.They could leverage Power BI for compelling visualizations including near real-time data for making data driven decisions. Besides, with the new Direct Lake query mode in Power BI, they no longer had to choose between data latency or performance; they could get both! Now as Business Analyst let's see how we can leverage the Power BI experience in Microsoft Fabric!
+
 ### Task 5.1: Leverage Power BI to derive actionable insights from data in Lakehouse using Direct Lake mode.
 
 In this task, you will work with Power BI to reveal some valuable insights.
@@ -70,14 +72,17 @@ Now, let's go Website Analytics.
 
    ![Task 6](media/task-6.1.18.png)
 
-Here we see an immediate problem for Contoso. The bounce rate is high. It looks like a large population of their customers/visitors leave their website without much activity.
+Here we see an immediate problem for Contoso. The bounce rate is high. It looks like a large population of their customers/visitors leave their website without much activity. The Power BI report reveals to Contoso that in fact a large population of the unhappy customers who contribute to the high bounce rate on their website are Millennials. In addition, it specifically helps Contoso identify the reason why these millennials are unhappy. It is evident that when they use their mobile devices to search for their favorite products such as beach accessories, their product searches are failing!
 
    ![Task 6](media/task-6.1.19.png)
 
-As a result of this analysis, Contoso reduced their bounce rate by implementing a mobile-friendly website with fast product searches, focusing on high demand products for millenials. These changes not only improve the bounce rate dramatically, but they also reward Contoso with uprecedented sales at their sales event.
+As a result of this analysis, Contoso reduced their bounce rate by implementing a mobile-friendly website with fast product searches, focusing on high demand products for millennials. These changes not only improve the bounce rate dramatically, but they also reward Contoso with unprecedented sales at their sales event.
 
+**OPTIONAL Exercise**
 
-## Exercise 6: Real-time Analytics experience, explore Streaming data using KQL DB for a near real-time analytics scenario (Optional)
+## Exercise 6: Real-time Analytics experience, explore Streaming data using KQL DB for a near real-time analytics scenario
+
+Imagine it is 6 am on the day of the big Thanksgiving sale for Contoso. Customers are flocking to their stores in large numbers. We are about to witness the very culmination of Contoso's Phenomenal transformation with Microsoft Fabric and ADB. Specifically, we will see how near real-time data is used to make decisions for the next moment at Contoso's stores to ensure optimal temperatures are maintained for their customers while they shop at the big sale! Let's see how
 
 ### Task 6.1: Create a KQL Database
 
