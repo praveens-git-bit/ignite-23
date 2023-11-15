@@ -139,39 +139,39 @@ salesDW
 
 	![Datawarehouse.](media/task-4.1.warehouse-12.png)
 
-17. In **Choose data destination** select the **Data Warehouse** and click the **Next** button.
+12. In **Choose data destination** select the **Data Warehouse** and click the **Next** button.
 
 	![Datawarehouse.](media/task-4.1.warehouse-13.png)
 
-18. In **Connect to data destination**, select **Load to new table** and click on the **Source** checkbox. Then click the **Next** button.
+13. In **Connect to data destination**, select **Load to new table** and click on the **Source** checkbox. Then click the **Next** button.
 
 	![Datawarehouse.](media/task-4.1.warehouse-14.png)
 
-19. In the **Settings** section, keep it **default** and click the **Next** button.
+14. In the **Settings** section, keep it **default** and click the **Next** button.
 
 	![Datawarehouse.](media/task-4.1.warehouse-15.png)
 
-20. In the **Review + save** section, scroll down to the end and then click the **Save + Run** button.
+15. In the **Review + save** section, scroll down to the end and then click the **Save + Run** button.
 
 	![Datawarehouse.](media/task-4.1.warehouse-16.png)	
 
 `Note: When you click on Save + Run the pipeline is automatically triggered.`
 
-21. If the below screen is prompted click on the **OK** button.
+16. If the below screen is prompted click on the **OK** button.
 
 	![Datawarehouse.](media/task-4.1.warehouse-16.1.png)	
 
-22. **Check** the notification or pipeline output screen for the progress of copy database.
+17. **Check** the notification or pipeline output screen for the progress of copy database.
 
 	![Datawarehouse.](media/task-4.1.warehouse-17.png)
 
-23. In the progress section of the pipeline, check the **status** of the running pipeline in the output section below.
+18. In the progress section of the pipeline, check the **status** of the running pipeline in the output section below.
 
 	![Datawarehouse.](media/task-4.1.warehouse-18.png)
 
 `Note: Wait for the resultant data to load.`
 
-24. **Wait** for the status of the pipeline to display **Succeeded** and go back to the **Data Warehouse** from the workspace.
+19. **Wait** for the status of the pipeline to display **Succeeded** and go back to the **Data Warehouse** from the workspace.
 
 	![Datawarehouse.](media/task-4.1.warehouse-19.png)
 
