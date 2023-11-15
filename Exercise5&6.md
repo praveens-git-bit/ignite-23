@@ -150,24 +150,24 @@ thermostat
     ![Pipeline.](media/task-5.2.2-2.png)
 
 
-7. Scroll down in the left navigation pane and click on **Event Hubs** under the **Entities** section. 
+6. Scroll down in the left navigation pane and click on **Event Hubs** under the **Entities** section. 
 
 	![Close the browser.](media/task-5.2.4.png)
 
-8. Click on the **thermostat** event hub.
+7. Click on the **thermostat** event hub.
 
 	![Close the browser.](media/task-5.2.4-2.png)
 
-9. Click on **Shared access policies** in the left pane under **Settings**, then click on **thermostat** and finally copy the **primary key** and paste it in a notepad for further use. 
+8. Click on **Shared access policies** in the left pane under **Settings**, then click on **thermostat** and finally copy the **primary key** and paste it in a notepad for further use. 
 
    ![Close the browser.](media/task-5.2.5.png)
 
-10. Go back to the **Power BI tab**.
+9. Go back to the **Power BI tab**.
 
 
    ![Close the browser.](media/task-5.2.5-2.png)
 
-11. Scroll down and select **Shared Access Key** for Authentication kind, enter **thermostat** as the Shared Access Key Name and then paste the value copied in **step 9** in the **Shared Access Key** field and click on the **Save** button.
+10. Scroll down and select **Shared Access Key** for Authentication kind, enter **thermostat** as the Shared Access Key Name and then paste the value copied in **step 9** in the **Shared Access Key** field and click on the **Save** button.
 
 
 ```BASH
@@ -176,29 +176,29 @@ thermostat
 
    ![Close the browser.](PowerBI/Task6.4.png)
 
-13. Click on the dropdown in the Consumer group field and select $Default.
+11. Click on the dropdown in the Consumer group field and select $Default.
 
 	![Close the browser.](PowerBI/Task6.5.png)
 
 `Note: Wait for the connection to be established.`
 
-14. Click on the Next button..
+12. Click on the Next button..
 
 	![Close the browser.](PowerBI/Task6.6.png)
 
 
 `Note: In the Inspect tab, data loading will take some time.`
 
-15. In the Inspect tab, click on the dropdown button next to Format: TXT, select JSON and click on the Finish button.
+13. In the Inspect tab, click on the dropdown button next to Format: TXT, select JSON and click on the Finish button.
 
 	![Close the browser.](PowerBI/Task6.7.png)
 
 
-16. **Wait** for the ingestion to complete, you will notice green checks that denote the completion. Finally, click on the **Close** button.
+14. **Wait** for the ingestion to complete, you will notice green checks that denote the completion. Finally, click on the **Close** button.
 
     ![Close the browser.](PowerBI/Task6.8.png)
 
-17. Hard refresh the page using **Ctrl + Shift + R** to see the details for the ingested data.
+15. Hard refresh the page using **Ctrl + Shift + R** to see the details for the ingested data.
 
    ![Close the browser.](media/task-5.2.12.png)
 	
